@@ -4,3 +4,4 @@ Have a Second is a chrome extension that is creates a delay before entering time
 The chrome extension can be found [here](https://chromewebstore.google.com/detail/have-a-second-delayed-gra/ifkcnjjinkfnfmbcpcemnnbbkmobpfcj?hl=en-GB&utm_source=ext_sidebar)
 Please feel free to support this project just by using the extension and remaining productive throughout your day, that's all I can ask for :D.
 Uploading the code here, just for clarity and possible improvements.
+![image](https://github.com/StevenKhuu27/Have-a-Second---Chrome-Extension/assets/60863781/2f828f71-4be9-45b8-b30b-6dbdb4659f7d)
