@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimalist Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f6f1eb;
+        }
+
+        #websiteForm {
+            max-width: 400px;
+            margin: 0px auto 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #websiteInput {
+            width: 60%;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        #addWebsiteBtn {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px
+        }
+
+        #websiteList {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .websiteItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #helpfulWebsiteForm {
+            max-width: 400px;
+            margin: 0px auto 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #helpfulWebsiteInput {
+            width: 60%;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        #addHelpfulWebsiteBtn {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+
+        #helpfulWebsiteList {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .helpfulWebsiteItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .removeBtn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 3px 8px;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 100px;
+            font-family: great vibes;
+
+        }
+        p {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3 {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #quote {
+            font-family: great vibes;
+            font-size: 45px;
+        }
+        span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #countdownTimer {
+            width: 50px;
+            height: 30px;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #countdownHeading {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Have a Second</h1>
+        <p>Your time is important, let's have a brief pause before entering time consuming websites.</p>
+        <!-- <p>Use this to take a breather and dictate your time more wisely.</p> -->
+        
+        <br>
+        <h3 id="countdownHeading">How long do you want to wait before entering a site:</h3>
+        <input type="number" id="countdownTimer"></input>
+        <h3>Enter your list of naughty websites here:</h3>
+        <form id="websiteForm">
+          <label for="websiteInput">Website:</label>
+          <input type="text" id="websiteInput" name="websiteInput">
+          <button type="button" id="addWebsiteBtn">Add Website</button>
+          <ul id="websiteList"></ul>
+          <!-- <input type="submit" value="Submit"> -->
+        </form>
+        <h3>Enter some websites you rather spend your time on:</h3>
+        <form id="helpfulWebsiteForm">
+          <label for="helpfulWebsiteInput">Website:</label>
+          <input type="text" id="helpfulWebsiteInput" name="helpfulWebsiteInput">
+          <button type="button" id="addHelpfulWebsiteBtn">Add Website</button>
+          <ul id="helpfulWebsiteList"></ul>
+          <!-- <input type="submit" value="Submit"> -->
+        </form>
+        <br>
+        <p id="quote">Remember, how we spend our time is how we spend our lives</p>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="background.js"></script>
+    <!-- <script type="module" src="./background.js"></script> -->
+</body>
+</html>

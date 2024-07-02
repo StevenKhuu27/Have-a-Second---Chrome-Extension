@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Have a Second - Delayed Gratification",
+  "version": "2024.7.1",
+  "web_accessible_resources": [
+    {
+        "resources": [
+            "script.js",
+            "background.js",
+            "countdown.js"
+        ],
+        "matches": [
+            "<all_urls>"
+        ],
+        "permissions": [
+            "activeTab"
+        ]
+    }
+],
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  }
+}
